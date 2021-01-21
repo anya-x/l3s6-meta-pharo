@@ -1,0 +1,12 @@
+Exercices:
+1. Donnez l’expression qui rend la liste des nombres positifs
+#(1 2 3 -44 0 5 6 4 5 -3 22 1 2 5) select: [ :each | each > 0 ]
+
+2. Donnez l’expression qui rend la liste des carrés des nombres
+#(1 2 3 -44 0 5 6 4 5 -3 22 1 2 5) collect: [ :each | each * each]
+
+3. Donnez l’expression qui rend la somme des nombres
+#(1 2 3 -44 0 5 6 4 5 -3 22 1 2 5) sumNumbers
+
+4. Donnez l’expression qui rend le premier nombre négatif
+#(1 2 3 -44 0 5 6 4 5 -3 22 1 2 5) detect: [ :one | one < 0 ] ifFound: [:each|each] ifNone: 'does not exist'
