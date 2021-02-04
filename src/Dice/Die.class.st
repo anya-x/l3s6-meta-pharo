@@ -33,6 +33,14 @@ Die >> initialize [
 ]
 
 { #category : #'as yet unclassified' }
+Die >> printOn: aStream [
+"a Die (number of faces)"
+
+	super printOn: aStream.
+	aStream nextPutAll: '(', faces printString, ')'
+]
+
+{ #category : #'as yet unclassified' }
 Die >> roll [
 	
 	^faces atRandom
